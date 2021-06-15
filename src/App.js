@@ -19,7 +19,7 @@ const App = () => {
 
   // Fetches the movie data from the api as a JSON
   const getMovieRequest = async () => {
-    const url = `http://www.omdbapi.com/?s=${searchValue}&apikey=2357c7ec`;
+    const url = `https://www.omdbapi.com/?s=${searchValue}&apikey=2357c7ec`;
 
     const response = await fetch(url);
     const responseJson = await response.json();
